@@ -1,11 +1,13 @@
 
-public class Main {
-   public static void main(String args[]) {
-      String str = "this is Java";
-      System.out.println(removeCharAt(str, 3));
-   }
-   public static String removeCharAt(String s, int pos) {
-      return s.substring(0, pos) + s.substring(pos + 1);
-   }
+import java.text.SimpleDateFormat;
+import java.util.Date;
+ 
+public class Main{
+    public static void main(String[] args){
+        Date date = new Date();
+        String strDateFormat = "yyyy-MM-dd HH:mm:ss";
+        SimpleDateFormat sdf = new SimpleDateFormat(strDateFormat);
+        System.out.println(sdf.format(date));
+    }
 }
 
